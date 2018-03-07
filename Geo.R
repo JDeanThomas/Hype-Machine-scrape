@@ -6,10 +6,7 @@ require(rjson)
 urls = c("http://hypem.com/playlist/search/geographer/json/1/data.js", "http://hypem.com/playlist/search/geographer/json/2/data.js")
 url = ("http://hypem.com/playlist/search/geographer/json/2/data.js")
 
-
-#queryUrl = paste0('http://graph.facebook.com/fql?q=',fqlQuery,url,'"')  #ignoring the callback part
-#lookUp <- URLencode(queryUrl)
-#rd <- readLines(urls, warn="F") 
+ 
 geo <- fromJSON(readLines(url, warn="F"))
 geo2 <- fromJSON(readLines(url, warn="F"))
 geo
